@@ -108,7 +108,7 @@ const JoinAsHrManager = () => {
   return (
     <div className="w-2/4 mx-auto">
       <Helmet>
-        <title>Asset Nex | Join as HR</title>
+        <title>Asset management | Join as HR</title>
       </Helmet>
       <div className="card  w-full md:w-3/4 shadow-2xl bg-base-100 mx-auto">
         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -298,7 +298,9 @@ const JoinAsHrManager = () => {
         <p className="flex gap-2 px-8 mb-4">
           Alredy have an account{" "}
           <LoginModal isOpen={showForm} closeModal={() => setShowForm(false)} />
-          <button onClick={() => setShowForm(true)}>Login</button>
+          <a className="link link-secondary" onClick={() => setShowForm(true)}>
+            Login
+          </a>
         </p>
       </div>
     </div>

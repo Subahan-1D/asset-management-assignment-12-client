@@ -53,7 +53,7 @@ const NavMenu = () => {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "transparent" : "",
               // border: isActive ? "1px solid #23BE0A" : "",
-              color: isActive ? "orange" : "",
+              color: isActive ? "black" : "",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -194,7 +194,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "black" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -210,7 +210,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "black" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -226,7 +226,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "black" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -242,7 +242,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "black" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -258,7 +258,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "black" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -290,9 +290,9 @@ const NavMenu = () => {
         {userData.company_logo ? (
           <img src={userData.company_logo} className="w-40 h-24" />
         ) : (
-          <span className="text-xl font-bold ml-4 text-stone-700">
+          <NavLink to='/' className="text-xl font-bold ml-4 text-stone-700">
             Asset 👑 Management
-          </span>
+          </NavLink>
         )}
       </div>
       <div className="navbar-center hidden lg:flex">
