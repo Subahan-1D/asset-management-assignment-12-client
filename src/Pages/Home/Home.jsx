@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | Home</title>
+        <title>Asset management | Home</title>
       </Helmet>
       {!user ? <BannerSlider></BannerSlider> : ""}
       <PaindingRequest></PaindingRequest>

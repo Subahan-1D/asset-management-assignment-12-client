@@ -109,7 +109,7 @@ export default function PaindingRequest() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | five Requests</title>
+        <title>Asset management | five Requests</title>
       </Helmet>
       <SectionTitle heading="Painding five Requests"></SectionTitle>
 
