@@ -1,11 +1,5 @@
    @import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,400;1,100&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  overflow-x: hidden;
-  overflow-x: clip;
-}
  @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -48,23 +42,7 @@ a.active {
   @apply w-full mx-auto;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  overflow-x: hidden;
-  overflow-x: clip;
-}
 
-h1,
-h2,
-h3,
-h4,
-h6,
-h5,
-a,
-.logo {
-  font-family: "Mooli", sans-serif;
-}
 
 
   @layer base {
