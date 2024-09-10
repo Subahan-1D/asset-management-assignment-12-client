@@ -117,22 +117,7 @@ const JoinAsEmployee = () => {
               <span className="text-red-500 mt-1">Email is required</span>
             )}
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Date Of Birth</span>
-            </label>
-            <input
-              {...register("date", { required: true })}
-              name="date"
-              type="date"
-              className="input input-bordered"
-            />
-            {errors.date && (
-              <span className="text-red-500 mt-1">
-                Date of Birth is required
-              </span>
-            )}
-          </div>
+
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo</span>
@@ -192,6 +177,22 @@ const JoinAsEmployee = () => {
                   Forgot password?
                 </a>
               </label>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Date Of Birth</span>
+                </label>
+                <input
+                  {...register("date", { required: true })}
+                  name="date"
+                  type="date"
+                  className="input input-bordered"
+                />
+                {errors.date && (
+                  <span className="text-red-500 mt-1">
+                    Date of Birth is required
+                  </span>
+                )}
+              </div>
             </div>
             <p
               onClick={() => setShowPassword(!showPassword)}

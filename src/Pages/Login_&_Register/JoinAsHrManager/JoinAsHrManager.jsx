@@ -145,80 +145,7 @@ const JoinAsHrManager = () => {
               </span>
             )}
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Email</span>
-            </label>
-            <input
-              {...register("email", { required: true })}
-              name="email"
-              type="email"
-              placeholder="email"
-              className="input input-bordered"
-            />
-            {errors.email && (
-              <span className="text-red-500 mt-1">Email is required</span>
-            )}
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Date Of Birth</span>
-            </label>
-            <input
-              {...register("date", { required: true })}
-              name="date"
-              type="date"
-              className="input input-bordered"
-            />
-            {errors.date && (
-              <span className="text-red-500 mt-1">
-                Date of Birth is required
-              </span>
-            )}
-          </div>
-          {/* -----------------------------------------------------------------------package */}
-          <div>
-            <label className="label">
-              <span className="label-text">Select A Package</span>
-            </label>
-            <div className="input input-bordered w-full flex">
-              <select
-                {...register("package")}
-                name=""
-                id=""
-                className="focus:outline-none w-full"
-                onChange={handlepackage}
-                required
-              >
-                <option value="" disabled selected>
-                  Select One
-                </option>
-                {SubscriptionsCards.map((item) => (
-                  <option key={item._id} value={item._id}>
-                    ${item.price} for {item.members} Employee
-                  </option>
-                ))}
-              </select>
-            </div>
-            {errors.package && (
-              <span className="text-red-500 mt-1">Package is required</span>
-            )}
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Profile Photo</span>
-            </label>
-
-            <input
-              {...register("image", { required: true })}
-              name="image"
-              type="file"
-              className="file-input  file-input-xs w-full max-w-xs"
-            />
-            {errors.photo && (
-              <span className="text-red-500 mt-1 ">Photo is required</span>
-            )}
-          </div>
+          {/* company logo */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">Company Logo</span>
@@ -234,7 +161,38 @@ const JoinAsHrManager = () => {
               <span className="text-red-500 mt-1 ">Photo is required</span>
             )}
           </div>
+          {/* extra section */}
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Profile Photo</span>
+            </label>
 
+            <input
+              {...register("image", { required: true })}
+              name="image"
+              type="file"
+              className="file-input  file-input-xs w-full max-w-xs"
+            />
+            {errors.photo && (
+              <span className="text-red-500 mt-1 ">Photo is required</span>
+            )}
+          </div>
+
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input
+              {...register("email", { required: true })}
+              name="email"
+              type="email"
+              placeholder="email"
+              className="input input-bordered"
+            />
+            {errors.email && (
+              <span className="text-red-500 mt-1">Email is required</span>
+            )}
+          </div>
           <div className="flex items-center justify-end">
             <div className="form-control w-full relative">
               <label className="label">
@@ -289,6 +247,51 @@ const JoinAsHrManager = () => {
                 <FaRegEyeSlash></FaRegEyeSlash>
               )}
             </p>
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Date Of Birth</span>
+            </label>
+            <input
+              {...register("date", { required: true })}
+              name="date"
+              type="date"
+              className="input input-bordered"
+            />
+            {errors.date && (
+              <span className="text-red-500 mt-1">
+                Date of Birth is required
+              </span>
+            )}
+          </div>
+
+          {/*package */}
+          <div>
+            <label className="label">
+              <span className="label-text">Select A Package</span>
+            </label>
+            <div className="input input-bordered w-full flex">
+              <select
+                {...register("package")}
+                name=""
+                id=""
+                className="focus:outline-none w-full"
+                onChange={handlepackage}
+                required
+              >
+                <option value="" disabled selected>
+                  Select One
+                </option>
+                {SubscriptionsCards.map((item) => (
+                  <option key={item._id} value={item._id}>
+                    ${item.price} for {item.members} Employee
+                  </option>
+                ))}
+              </select>
+            </div>
+            {errors.package && (
+              <span className="text-red-500 mt-1">Package is required</span>
+            )}
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Login</button>
