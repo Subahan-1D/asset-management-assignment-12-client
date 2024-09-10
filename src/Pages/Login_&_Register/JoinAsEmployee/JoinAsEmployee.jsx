@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import useAxionPublic from "../../../Hooks/useAxiosPublic";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -211,7 +211,9 @@ const JoinAsEmployee = () => {
         <p className="flex gap-2 px-8">
           Alredy have an account{" "}
           <LoginModal isOpen={showForm} closeModal={() => setShowForm(false)} />
-          <button onClick={() => setShowForm(true)}>Login</button>
+          <a className="link link-secondary" onClick={() => setShowForm(true)}>
+            Login
+          </a>
         </p>
         <SocialLogin></SocialLogin>
       </div>

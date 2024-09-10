@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "@/components/ui/button";
 import useAuth from "@/Hooks/useAuth";
@@ -53,7 +53,7 @@ const NavMenu = () => {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "transparent" : "",
               // border: isActive ? "1px solid #23BE0A" : "",
-              color: isActive ? "green" : "",
+              color: isActive ? "orange" : "",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -194,7 +194,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "green" : "",
+                  color: isActive ? "orange" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -210,7 +210,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "green" : "",
+                  color: isActive ? "orange" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -226,7 +226,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "green" : "",
+                  color: isActive ? "orange" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -242,7 +242,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "green" : "",
+                  color: isActive ? "orange" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -258,7 +258,7 @@ const NavMenu = () => {
                   fontWeight: isActive ? "bold" : "",
                   backgroundColor: isActive ? "transparent" : "",
                   // border: isActive ? "1px solid #23BE0A" : "",
-                  color: isActive ? "green" : "",
+                  color: isActive ? "orange" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };
               }}
@@ -286,13 +286,13 @@ const NavMenu = () => {
             {menuLinks}
           </ul>
         </div>
-        {/* ---------------------------------------------------------------------------------------------- */}
+        {/* -user information--- */}
         {userData.company_logo ? (
           <img src={userData.company_logo} className="w-40 h-24" />
         ) : (
-          <a>
-            Asset Management
-          </a>
+          <span className="text-xl font-bold ml-4 text-stone-700">
+            Asset 👑 Management
+          </span>
         )}
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -311,7 +311,12 @@ const NavMenu = () => {
             <img className="rounded-full size-16" src={user.photoURL} alt="" />
           </div>
         ) : (
-          <Button onClick={() => setShowForm(true)}>Login</Button>
+          <button
+            className="btn mr-3 btn-accent"
+            onClick={() => setShowForm(true)}
+          >
+            Sign In
+          </button>
         )}
         {showForm && !user && (
           <LoginModal isOpen={showForm} closeModal={() => setShowForm(false)} />
