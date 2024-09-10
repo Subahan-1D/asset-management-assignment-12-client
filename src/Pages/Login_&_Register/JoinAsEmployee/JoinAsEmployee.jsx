@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import useAxionPublic from "../../../Hooks/useAxiosPublic";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -196,7 +196,7 @@ const JoinAsEmployee = () => {
             </div>
             <p
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute  hover:cursor-pointer mr-3"
+              className="absolute  hover:cursor-pointer mr-3 -mt-20"
             >
               {showPassword ? (
                 <FaRegEye></FaRegEye>

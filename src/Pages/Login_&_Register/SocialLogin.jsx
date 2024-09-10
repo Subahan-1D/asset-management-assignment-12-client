@@ -50,10 +50,6 @@ const SocialLogin = () => {
     <div className="mb-7">
       <div className="divider">OR</div>
       <div className="flex justify-center">
-        {/* <Button onClick={} className="flex gap-2">
-          <GrGoogle></GrGoogle>
-          Google
-        </Button> */}
         <div
           onClick={handleGoogleLogin}
           className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg   hover:bg-gray-50 "
