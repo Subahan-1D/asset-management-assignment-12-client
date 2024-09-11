@@ -81,7 +81,7 @@ export default function MyEmployeeList() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | My Employee List</title>
+        <title>Asset management | My Employee List</title>
       </Helmet>
       <SectionTitle heading="my employees"></SectionTitle>
       <h3 className="my-4">
