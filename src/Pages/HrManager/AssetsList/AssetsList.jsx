@@ -102,7 +102,7 @@ export default function AssetsList() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | Asset list</title>
+        <title>Asset management | Asset list</title>
       </Helmet>
       <div className="flex justify-center mt-2 mb-4 gap-4">
         <label className="input input-bordered flex items-center gap-2">
