@@ -17,7 +17,7 @@ const CheckOutForm = () => {
   const navigate = useNavigate();
 
   const price = payment?.price;
-  console.log(payment, "paymentssssssssssssssss");
+  console.log(payment, "payments Successfully");
 
   useEffect(() => {
     if (price > 0) {

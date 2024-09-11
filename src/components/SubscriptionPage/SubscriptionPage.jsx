@@ -15,7 +15,7 @@ const SubscriptionPage = () => {
   const { setPayment } = useAuth();
   const [SubscriptionsCards] = useSubcriptionCard();
 
-  console.log("hiiiiiiiiiiiii", SubscriptionsCards);
+  console.log("Hello", SubscriptionsCards);
 
   const handlePurchase = (item) => {
     setPayment(item);
@@ -24,7 +24,7 @@ const SubscriptionPage = () => {
   return (
     <div className="mb-10 container mx-auto">
       <Helmet>
-        <title>Asset Nex | Subscriptions</title>
+        <title>Asset management | Subscriptions</title>
       </Helmet>
       <SectionTitle heading="explore our subscriptions"></SectionTitle>
 
