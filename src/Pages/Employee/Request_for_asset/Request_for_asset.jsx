@@ -109,7 +109,7 @@ export default function Request_for_asset() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | Request for an Assets</title>
+        <title>Asset management | Request for an Assets</title>
       </Helmet>
 
       <div className="flex justify-center mt-2 mb-4 gap-4">
