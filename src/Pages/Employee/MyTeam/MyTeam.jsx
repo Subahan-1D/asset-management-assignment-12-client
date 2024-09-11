@@ -40,7 +40,7 @@ export default function MyTeam() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | My Team</title>
+        <title>Asset management | My Team</title>
       </Helmet>
       <SectionTitle heading="my team"></SectionTitle>
       <h3 className="my-4">
