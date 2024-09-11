@@ -14,7 +14,7 @@ const MyProfile = () => {
 
   console.log(userData);
   if (!user) {
-    <span className="loading loading-infinity loading-lg"></span>;
+    <span className="loading loading-spinner loading-lg text-secondary"></span>;
   }
 
   const handleUpdate = (e) => {
@@ -46,7 +46,7 @@ const MyProfile = () => {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | My Profile</title>
+        <title>Asset management | My Profile</title>
       </Helmet>
       <SectionTitle heading="Update Profile"></SectionTitle>
 
@@ -74,7 +74,7 @@ const MyProfile = () => {
             }}
             variant="standard"
           />
-          <Button>Update</Button>
+          <Button>Update Profile</Button>
         </div>
       </form>
     </div>
