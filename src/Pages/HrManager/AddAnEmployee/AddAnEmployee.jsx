@@ -112,7 +112,7 @@ export default function MyEmAddAnEmployeeployeeList() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | Add An Employee</title>
+        <title>Asset management | Add An Employee</title>
       </Helmet>
       <SectionTitle heading="Add employee"></SectionTitle>
       <h3 className="my-4">

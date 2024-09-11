@@ -156,7 +156,7 @@ export default function Request_for_asset() {
               {isLoading ? (
                 <TableRow>
                   <TableCell colSpan={4} align="center">
-                    Loading...
+                    <span className="loading loading-infinity loading-lg"></span>
                   </TableCell>
                 </TableRow>
               ) : error ? (

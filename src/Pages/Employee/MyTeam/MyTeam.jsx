@@ -26,7 +26,7 @@ export default function MyTeam() {
   const [myTeam] = useMyTeam();
   console.log(myTeam);
 
-  // --------------------------------
+
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

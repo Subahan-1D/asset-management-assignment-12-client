@@ -142,7 +142,7 @@ export default function AllRequest() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | All Requests</title>
+        <title>Asset management | All Requests</title>
       </Helmet>
       <SectionTitle heading="All Requests"></SectionTitle>
       <div className="flex justify-center mt-2 mb-4 gap-4">
