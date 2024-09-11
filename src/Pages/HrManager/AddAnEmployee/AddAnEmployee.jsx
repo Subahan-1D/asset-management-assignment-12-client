@@ -61,7 +61,7 @@ export default function MyEmAddAnEmployeeployeeList() {
 
     console.log(teamInfo, "team info");
     if (AddLimit.member <= 0 || AddLimit.length == 0) {
-      console.log(AddLimit, "add limit aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+      console.log(AddLimit, "add limit ");
       navigate("/subscription_page");
     } else {
       Swal.fire({

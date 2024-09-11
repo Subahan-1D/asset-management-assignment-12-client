@@ -35,7 +35,7 @@ export default function MyAssets() {
   const [searchValue, setSearchValue] = React.useState();
   const [filterValue, setFilterValue] = React.useState();
 
-  //------------------------------------------------------------ search
+  // search
 
   const handleSearch = (e) => {
     setSearchValue(e.target.value);
@@ -97,7 +97,7 @@ export default function MyAssets() {
     doc.setProperties({
       title: `Asset Details - ${asset.name}`,
       subject: "Details of Asset",
-      author: "Asset Nex",
+      author: "Asset management",
       keywords: "asset, details, pdf",
     });
 
@@ -132,7 +132,7 @@ export default function MyAssets() {
   return (
     <div>
       <Helmet>
-        <title>Asset Nex | My Assets</title>
+        <title>Asset management | My Assets</title>
       </Helmet>
       <div className="flex justify-center mt-2 mb-4 gap-4">
         <label className="input input-bordered flex items-center gap-2">

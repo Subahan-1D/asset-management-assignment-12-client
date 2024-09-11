@@ -63,7 +63,7 @@ const AddAsset = () => {
   return (
     <div className="">
       <Helmet>
-        <title>Asset Nex | Add an Asset</title>
+        <title>Asset management | Add an Asset</title>
       </Helmet>
       <SectionTitle heading="Add an asset"></SectionTitle>
       <form onSubmit={onSubmit} action="">
