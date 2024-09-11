@@ -83,7 +83,7 @@ const JoinAsEmployee = () => {
   return (
     <div className="w-2/4 mx-auto">
       <Helmet>
-        <title>Asset Nex | Join as Employee</title>
+        <title>Asset management | Join as Employee</title>
       </Helmet>
       <div className="card  w-full md:w-3/4 shadow-2xl bg-base-100 mx-auto">
         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
