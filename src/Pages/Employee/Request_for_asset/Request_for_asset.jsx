@@ -35,6 +35,7 @@ export default function Request_for_asset() {
   const axiosPublic = useAxiosPublic();
   const currentDate = new Date();
   const { user } = useAuth();
+  console.log(userData)
 
   const {
     data: request_assets_list = [],

@@ -108,10 +108,9 @@ const UpdateAsset = () => {
             required
             defaultValue={asset?.product_quantity}
           />
-
-          <Button type="submit" className="mt-3">
-            Add
-          </Button>
+          <button type="submit" className="btn btn-primary mt-3">
+            Add Product
+          </button>
         </div>
       </form>
     </div>

@@ -202,12 +202,20 @@ export default function AllRequest() {
 
                     <TableCell>
                       <div className="flex gap-2">
-                        <Button onClick={() => handleApprove(row)}>
+                        <button
+                          onClick={() => handleApprove(row)}
+                          className="btn btn-success"
+                        >
+                          {" "}
                           Approve
-                        </Button>
-                        <Button onClick={() => handleReject(row)}>
+                        </button>
+
+                        <button
+                          onClick={() => handleReject(row)}
+                          className="btn btn-warning"
+                        >
                           Reject
-                        </Button>
+                        </button>
                       </div>
                     </TableCell>
                   </TableRow>

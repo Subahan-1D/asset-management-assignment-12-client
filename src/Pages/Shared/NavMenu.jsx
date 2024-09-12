@@ -290,7 +290,7 @@ const NavMenu = () => {
         {userData.company_logo ? (
           <img src={userData.company_logo} className="w-40 h-24" />
         ) : (
-          <NavLink to='/' className="text-2xl font-bold ml-4 text-stone-700">
+          <NavLink to="/" className="text-2xl font-bold ml-4 text-stone-700">
             Asset 👑 Management
           </NavLink>
         )}
@@ -301,9 +301,9 @@ const NavMenu = () => {
       <div className="navbar-end">
         {user && (
           <>
-            <Button onClick={handleLogOut} className=" btn-active  ">
+            <button onClick={handleLogOut} className=" btn mr-3 btn-accent  ">
               SIGN OUT
-            </Button>
+            </button>
           </>
         )}
         {user ? (

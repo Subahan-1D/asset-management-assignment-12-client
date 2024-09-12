@@ -16,6 +16,7 @@ const Home = () => {
       {!user ? <BannerSlider></BannerSlider> : ""}
       <PaindingRequest></PaindingRequest>
       <About></About>
+      
       {!user ? <SubscriptionsCard></SubscriptionsCard> : ""}
       <Sponsor></Sponsor>
     </div>

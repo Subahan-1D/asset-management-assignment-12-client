@@ -4,6 +4,7 @@ import useUsers from "./useUsers";
 
 const useMyTeam = () => {
   const [userData] = useUsers();
+  console.log(userData.hr_email)
 
   const axiosPublic = useAxiosPublic();
   const { data: myTeam = [], refetch } = useQuery({

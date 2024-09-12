@@ -123,9 +123,12 @@ export default function MyEmployeeList() {
                       {/* <TableCell>{row?.added_date.slice(0, 10)}</TableCell> */}
                       <TableCell>
                         <div className="flex gap-2">
-                          <Button onClick={() => handleRemove(row)}>
+                          <button
+                            onClick={() => handleRemove(row)}
+                            className="btn btn-error"
+                          >
                             Remove
-                          </Button>
+                          </button>
                         </div>
                       </TableCell>
                     </TableRow>

@@ -158,7 +158,7 @@ export default function MyEmAddAnEmployeeployeeList() {
                           </th>
                         ) : (
                           <th onClick={() => handleAdd(row)}>
-                            <Button>Add</Button>
+                            <button className="btn btn-primary">Add</button>
                           </th>
                         )}
                       </TableCell>

@@ -174,11 +174,15 @@ export default function AssetsList() {
                       <TableCell>
                         <div className="flex gap-2">
                           <Link to={`update_asset/${row._id}`}>
-                            <Button>Update</Button>
+                            <button className="btn btn-success">Update</button>
                           </Link>
-                          <Button onClick={() => handleDelete(row)}>
+                          <button
+                            onClick={() => handleDelete(row)}
+                            className="btn btn-error"
+                          >
+                            {" "}
                             Delete
-                          </Button>
+                          </button>
                         </div>
                       </TableCell>
                     </TableRow>

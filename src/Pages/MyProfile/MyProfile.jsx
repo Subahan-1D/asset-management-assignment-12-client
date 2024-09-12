@@ -74,7 +74,8 @@ const MyProfile = () => {
             }}
             variant="standard"
           />
-          <Button>Update Profile</Button>
+
+          <button className="btn btn-secondary">Update Profile</button>
         </div>
       </form>
     </div>
