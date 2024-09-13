@@ -87,7 +87,7 @@ export const Routes = createBrowserRouter([
         element: <Payment></Payment>,
         loader: ({ params }) =>
           fetch(
-            `https://asset-management-assignment-12-server.vercel.app/join_hr_manager/payment/${params.id}`
+            `http://localhost:9000/join_hr_manager/payment/${params.id}`
           ),
       },
       {
